@@ -12,9 +12,18 @@ public abstract class Duck
         _swimBehavior = swim;
     }
 
-    public abstract void Quack();
+    public void Quack()
+    {
+        _quackBehavior.Execute();
+    }
 
-    public abstract void Fly();
+    public void Fly()
+    {
+        _flyBehavior.Execute();
+    }
 
-    public abstract void Swim();
+    public void Swim()
+    {
+        _swimBehavior.Execute();
+    }
 }

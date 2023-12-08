@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Strategy;
+
+WildDuck wildDuck = new WildDuck();
+wildDuck.Fly();
+wildDuck.Swim(); 
+wildDuck.Quack();
+
+IronDuck ironDuck = new IronDuck();
+ironDuck.Fly();
+ironDuck.Quack();
+ironDuck.Swim();
